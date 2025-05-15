@@ -25,8 +25,8 @@ int getIndex(char input) {
     else if(input == '.')   return 2;
     else if(input == '\n') return 3;
     else if(input == ' ') return 4;
-    else if(input >= 'a' && input <= 'z') return 4 + (input - 'a');
-    else if(input >= '0' && input <= '9') return 4 + 26 + (input - '0');
+    else if(input >= 'a' && input <= 'z') return 5 + (input - 'a');
+    else if(input >= '0' && input <= '9') return 5 + 26 + (input - '0');
     else return 0;
 }
 

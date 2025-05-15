@@ -64,7 +64,6 @@ int main(void) {
                     break;
                 } else {
                     cout << "ERRO\n";
-                    current_sequence = "";
                 }
             }
 
