@@ -61,11 +61,11 @@ int main(void) {
             } else { // Nenhuma transição possível
                 if (isFinal(current_state)) {
                     cout << greatest_sequence << "\n";
+                    break;
                 } else {
                     cout << "ERRO\n";
+                    current_sequence = "";
                 }
-                
-                break;
             }
 
             greatest_sequence = current_sequence;
