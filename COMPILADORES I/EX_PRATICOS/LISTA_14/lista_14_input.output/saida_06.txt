@@ -1,0 +1,200 @@
+Erro de sintaxe na coluna [648]: ^
+Erro de sintaxe na coluna [981]: ^
+Erro de sintaxe na coluna [4263]: ^
+Erro de sintaxe na coluna [6454]: ^
+Erro de sintaxe na coluna [767]: ^
+Erro de sintaxe na coluna [1366]: ^
+Erro de sintaxe na coluna [437]: ^
+Erro de sintaxe na coluna [1094]: /
+Erro de sintaxe na coluna [9392]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [204]: abs
+Erro de sintaxe na coluna [3902]: ^
+Erro de sintaxe na coluna [6111]: ^
+Erro de sintaxe na coluna [12619]: ^
+Erro de sintaxe na coluna [1051]: ^
+Erro de sintaxe na coluna [3199]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [1937]: ^
+Erro de sintaxe na coluna [6447]: ^
+Erro de sintaxe na coluna [6971]: ^
+Erro de sintaxe na coluna [2176]: ^
+Erro de sintaxe na coluna [2314]: ^
+Erro de sintaxe na coluna [1392]: ^
+Erro de sintaxe na coluna [7633]: ^
+Erro de sintaxe na coluna [257]: ^
+Erro de sintaxe na coluna [1833]: ^
+Erro de sintaxe na coluna [5834]: ^
+Erro de sintaxe na coluna [7752]: 775254978757690
+Erro de sintaxe na coluna [2736]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [288]: ^
+Erro de sintaxe na coluna [2795]: ^
+Erro de sintaxe na coluna [683]: ^
+Erro de sintaxe na coluna [10969]: ^
+Erro de sintaxe na coluna [1590]: ^
+Erro de sintaxe na coluna [7865]: 7691239.9720726103304611
+Erro de sintaxe na coluna [1532]: ^
+Erro de sintaxe na coluna [12120]: ^
+Erro de sintaxe na coluna [4878]: ^
+Erro de sintaxe na coluna [1782]: 086
+Erro de sintaxe na coluna [11821]: ^
+Erro de sintaxe na coluna [6522]: ^
+Erro de sintaxe na coluna [4640]: ^
+Erro de sintaxe na coluna [148]: ^
+Erro de sintaxe na coluna [3258]: ^
+Erro de sintaxe na coluna [1987]: ^
+Erro de sintaxe na coluna [14861]: *
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [6940]: ^
+Erro de sintaxe na coluna [3413]: ^
+Erro de sintaxe na coluna [11242]: ^
+Erro de sintaxe na coluna [2504]: ^
+Erro de sintaxe na coluna [9806]: ^
+Erro de sintaxe na coluna [463]: *
+Erro de sintaxe na coluna [4066]: ^
+Erro de sintaxe na coluna [1342]: ^
+Erro de sintaxe na coluna [24041]: ^
+Erro de sintaxe na coluna [829]: ^
+Erro de sintaxe na coluna [3199]: ^
+Erro de sintaxe na coluna [2989]: ^
+Erro de sintaxe na coluna [11419]: ^
+Erro de sintaxe na coluna [4482]: ^
+Erro de sintaxe na coluna [635]: ^
+Erro de sintaxe na coluna [1545]: sen
+Erro de sintaxe na coluna [7163]: %
+Erro de sintaxe na coluna [21277]: ^
+Erro de sintaxe na coluna [6847]: abs
+Erro de sintaxe na coluna [19321]: ^
+Erro de sintaxe na coluna [3775]: ^
+Erro de sintaxe na coluna [19826]: ^
+Erro de sintaxe na coluna [1745]: ^
+Erro de sintaxe na coluna [2504]: ^
+Erro de sintaxe na coluna [859]: ^
+Erro de sintaxe na coluna [1320]: ^
+Erro de sintaxe na coluna [9083]: ^
+Erro de sintaxe na coluna [2336]: ^
+Erro de sintaxe na coluna [6911]: ^
+Erro de sintaxe na coluna [18753]: ^
+Erro de sintaxe na coluna [5278]: ^
+Erro de sintaxe na coluna [3685]: ^
+Erro de sintaxe na coluna [2902]: ^
+Erro de sintaxe na coluna [3081]: ^
+Erro de sintaxe na coluna [4290]: vzydpczwf
+Erro de sintaxe na coluna [7803]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [15941]: ^
+Erro de sintaxe na coluna [1137]: ^
+Erro de sintaxe na coluna [10062]: )
+Erro de sintaxe na coluna [7128]: ^
+Erro de sintaxe na coluna [12666]: ^
+Erro de sintaxe na coluna [842]: ^
+Erro de sintaxe na coluna [505]: ^
+Erro de sintaxe na coluna [4468]: ^
+EXPRESSAO CORRETA
+Erro de sintaxe na coluna [5398]: ^
+Erro de sintaxe na coluna [10107]: sen
+Erro de sintaxe na coluna [13005]: ^
+Erro de sintaxe na coluna [9034]: /
+Erro de sintaxe na coluna [343]: ^
+EXPRESSAO CORRETA
+Erro de sintaxe na coluna [1294]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [1752]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [7871]: ^
+Erro de sintaxe na coluna [6145]: ^
+Erro de sintaxe na coluna [2809]: ^
+Erro de sintaxe na coluna [14419]: ^
+EXPRESSAO CORRETA
+Erro de sintaxe na coluna [8349]: ^
+Erro de sintaxe na coluna [2845]: ^
+Erro de sintaxe na coluna [1614]: ^
+Erro de sintaxe na coluna [4823]: ^
+Erro de sintaxe na coluna [900]: ^
+A expressao terminou de forma inesperada.
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [5038]: ^
+Erro de sintaxe na coluna [2050]: ^
+Erro de sintaxe na coluna [57]: ^
+Erro de sintaxe na coluna [7997]: ^
+Erro de sintaxe na coluna [2543]: /
+Erro de sintaxe na coluna [4248]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [6314]: ^
+EXPRESSAO CORRETA
+Erro de sintaxe na coluna [2658]: ^
+Erro de sintaxe na coluna [7983]: ^
+Erro de sintaxe na coluna [5005]: ^
+Erro de sintaxe na coluna [21467]: ^
+Erro de sintaxe na coluna [10801]: ^
+Erro de sintaxe na coluna [345]: ^
+Erro de sintaxe na coluna [966]: )
+Erro de sintaxe na coluna [2122]: ^
+Erro de sintaxe na coluna [14195]: ^
+Erro de sintaxe na coluna [12739]: ^
+Erro de sintaxe na coluna [2043]: ^
+Erro de sintaxe na coluna [9938]: ^
+Erro de sintaxe na coluna [3402]: ^
+Erro de sintaxe na coluna [1562]: ^
+Erro de sintaxe na coluna [13449]: ^
+Erro de sintaxe na coluna [701]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [3905]: ^
+Erro de sintaxe na coluna [5976]: ^
+Erro de sintaxe na coluna [612]: ^
+Erro de sintaxe na coluna [11167]: ^
+Erro de sintaxe na coluna [592]: ^
+Erro de sintaxe na coluna [2014]: ^
+Erro de sintaxe na coluna [12050]: ^
+Erro de sintaxe na coluna [4995]: 1563
+Erro de sintaxe na coluna [295]: ^
+Erro de sintaxe na coluna [5790]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [3885]: ^
+Erro de sintaxe na coluna [6362]: ^
+Erro de sintaxe na coluna [4310]: ^
+Erro de sintaxe na coluna [272]: ^
+Erro de sintaxe na coluna [2899]: ^
+Erro de sintaxe na coluna [1597]: ^
+Erro de sintaxe na coluna [1761]: ^
+Erro de sintaxe na coluna [1491]: ^
+Erro de sintaxe na coluna [545]: ^
+Erro de sintaxe na coluna [4186]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [6743]: ^
+Erro de sintaxe na coluna [7904]: ^
+Erro de sintaxe na coluna [7115]: ^
+Erro de sintaxe na coluna [8384]: ^
+Erro de sintaxe na coluna [5527]: ^
+Erro de sintaxe na coluna [3970]: cos
+Erro de sintaxe na coluna [696]: ^
+Erro de sintaxe na coluna [10380]: ^
+Erro de sintaxe na coluna [6035]: ^
+Erro de sintaxe na coluna [54]: ^
+Erro de sintaxe na coluna [2260]: ^
+Erro de sintaxe na coluna [22642]: ^
+Erro de sintaxe na coluna [78]: .240962878414618
+Erro de sintaxe na coluna [19504]: ^
+Erro de sintaxe na coluna [22330]: ^
+Erro de sintaxe na coluna [1491]: ^
+Erro de sintaxe na coluna [1622]: ^
+Erro de sintaxe na coluna [2902]: ^
+Erro de sintaxe na coluna [2728]: *
+EXPRESSAO CORRETA
+Erro de sintaxe na coluna [4293]: ^
+Erro de sintaxe na coluna [924]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [5915]: ^
+Erro de sintaxe na coluna [5238]: ^
+Erro de sintaxe na coluna [1690]: ^
+Erro de sintaxe na coluna [3234]: ^
+Erro de sintaxe na coluna [752]: 471862500
+EXPRESSAO CORRETA
+A expressao terminou de forma inesperada.
+A expressao terminou de forma inesperada.
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [2371]: ^
+Erro de sintaxe na coluna [8254]: xdvihvwkzcmqmpok
+Erro de sintaxe na coluna [6628]: ^
+Erro de sintaxe na coluna [654]: cos

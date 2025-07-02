@@ -1,0 +1,250 @@
+Caractere(s) invalido(s) -> [$]
+Erro de sintaxe na coluna [2653]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [3527]: ^
+Erro de sintaxe na coluna [18749]: ^
+Caractere(s) invalido(s) -> [,]
+Erro de sintaxe na coluna [6984]: ^
+Erro de sintaxe na coluna [8484]: ^
+Erro de sintaxe na coluna [5]: emwkvhzwzjualvanw
+Erro de sintaxe na coluna [1651]: ^
+Caractere(s) invalido(s) -> [?]
+Caractere(s) invalido(s) -> [,,?,&]
+Caractere(s) invalido(s) -> [@,=]
+Caractere(s) invalido(s) -> [?,&,?]
+Caractere(s) invalido(s) -> [$]
+Erro de sintaxe na coluna [12187]: ^
+Erro de sintaxe na coluna [257]: )
+Caractere(s) invalido(s) -> [?,,]
+Erro de sintaxe na coluna [254]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [602]: ^
+Erro de sintaxe na coluna [6162]: /
+Erro de sintaxe na coluna [2454]: ^
+Erro de sintaxe na coluna [1616]: ^
+Erro de sintaxe na coluna [387]: ^
+EXPRESSAO CORRETA
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [5813]: ^
+Erro de sintaxe na coluna [16218]: ^
+Caractere(s) invalido(s) -> [$]
+Erro de sintaxe na coluna [1620]: ^
+Erro de sintaxe na coluna [9195]: ^
+Erro de sintaxe na coluna [4391]: ^
+Caractere(s) invalido(s) -> [|]
+Caractere(s) invalido(s) -> [#]
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [222]: ^
+Erro de sintaxe na coluna [540]: ^
+Erro de sintaxe na coluna [5357]: ^
+Caractere(s) invalido(s) -> [,,#,|,@]
+Caractere(s) invalido(s) -> [?,@,&,?]
+Erro de sintaxe na coluna [1]: *
+Caractere(s) invalido(s) -> [?]
+Caractere(s) invalido(s) -> [#]
+Erro de sintaxe na coluna [3671]: ^
+Caractere(s) invalido(s) -> [$,=]
+Caractere(s) invalido(s) -> [$,?]
+Erro de sintaxe na coluna [3319]: ^
+Caractere(s) invalido(s) -> [?]
+Caractere(s) invalido(s) -> [?]
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [,,?,!]
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [1131]: ^
+Caractere(s) invalido(s) -> [=]
+Erro de sintaxe na coluna [2819]: ^
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [|,|]
+Caractere(s) invalido(s) -> [=]
+Erro de sintaxe na coluna [11624]: ^
+Erro de sintaxe na coluna [3201]: ^
+Caractere(s) invalido(s) -> [,]
+Erro de sintaxe na coluna [3532]: ^
+Erro de sintaxe na coluna [1579]: ^
+Erro de sintaxe na coluna [8469]: *
+Caractere(s) invalido(s) -> [$]
+Erro de sintaxe na coluna [2760]: ^
+Caractere(s) invalido(s) -> [&]
+Erro de sintaxe na coluna [1035]: ^
+Caractere(s) invalido(s) -> [#]
+Caractere(s) invalido(s) -> [,,=]
+Caractere(s) invalido(s) -> [?,$]
+Caractere(s) invalido(s) -> [=]
+Caractere(s) invalido(s) -> [&]
+Caractere(s) invalido(s) -> [=]
+Caractere(s) invalido(s) -> [,,=]
+Erro de sintaxe na coluna [982]: ^
+Caractere(s) invalido(s) -> [?]
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [?]
+Caractere(s) invalido(s) -> [&]
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [4755]: ^
+Erro de sintaxe na coluna [3264]: 4822
+Caractere(s) invalido(s) -> [#]
+Erro de sintaxe na coluna [3755]: ^
+Erro de sintaxe na coluna [848]: ^
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [13404]: ^
+Caractere(s) invalido(s) -> [,]
+Caractere(s) invalido(s) -> [|,,,!]
+Caractere(s) invalido(s) -> [=]
+Erro de sintaxe na coluna [938]: ^
+Erro de sintaxe na coluna [430]: ^
+Erro de sintaxe na coluna [3948]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [2136]: ^
+Caractere(s) invalido(s) -> [$]
+Erro de sintaxe na coluna [18817]: ^
+Caractere(s) invalido(s) -> [@]
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [918]: ^
+Caractere(s) invalido(s) -> [?]
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [@]
+Erro de sintaxe na coluna [17417]: ^
+Erro de sintaxe na coluna [16116]: ^
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [9138]: ^
+Erro de sintaxe na coluna [3345]: ^
+Erro de sintaxe na coluna [602]: ^
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [2305]: ^
+Erro de sintaxe na coluna [230]: ^
+Erro de sintaxe na coluna [528]: ^
+Erro de sintaxe na coluna [3710]: ^
+Erro de sintaxe na coluna [2217]: ^
+Erro de sintaxe na coluna [2786]: ^
+Erro de sintaxe na coluna [4080]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [18634]: ^
+Erro de sintaxe na coluna [6821]: ^
+Caractere(s) invalido(s) -> [#]
+Erro de sintaxe na coluna [2561]: ^
+Caractere(s) invalido(s) -> [#,,]
+Caractere(s) invalido(s) -> [!]
+Caractere(s) invalido(s) -> [!]
+Erro de sintaxe na coluna [11031]: ^
+Erro de sintaxe na coluna [10228]: ^
+Caractere(s) invalido(s) -> [|]
+Erro de sintaxe na coluna [5232]: ^
+Erro de sintaxe na coluna [9394]: ^
+Caractere(s) invalido(s) -> [,]
+Erro de sintaxe na coluna [6776]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [8318]: ^
+Erro de sintaxe na coluna [5318]: .323678
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [!]
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [2093]: ^
+Caractere(s) invalido(s) -> [|]
+Erro de sintaxe na coluna [2949]: ^
+Erro de sintaxe na coluna [14464]: ^
+Erro de sintaxe na coluna [18075]: ^
+Caractere(s) invalido(s) -> [@]
+Caractere(s) invalido(s) -> [!]
+Caractere(s) invalido(s) -> [&,=,@,$,$]
+Erro de sintaxe na coluna [5802]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [11889]: ^
+Erro de sintaxe na coluna [650]: biucczfqohtr
+Erro de sintaxe na coluna [12833]: ^
+Erro de sintaxe na coluna [342]: ^
+Erro de sintaxe na coluna [4978]: ^
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [2837]: ^
+Erro de sintaxe na coluna [1918]: ^
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [?,@,,]
+Erro de sintaxe na coluna [2727]: ^
+Erro de sintaxe na coluna [19041]: ^
+Erro de sintaxe na coluna [2335]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [761]: ^
+Caractere(s) invalido(s) -> [@]
+Erro de sintaxe na coluna [5984]: ^
+Erro de sintaxe na coluna [1077]: ^
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [6032]: ^
+Erro de sintaxe na coluna [2460]: ^
+Erro de sintaxe na coluna [13142]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [1585]: ^
+A expressao terminou de forma inesperada.
+Erro de sintaxe na coluna [21722]: ^
+Erro de sintaxe na coluna [1138]: ^
+Caractere(s) invalido(s) -> [,,?,|]
+Erro de sintaxe na coluna [1993]: ^
+Caractere(s) invalido(s) -> [?,!]
+Caractere(s) invalido(s) -> [?,|]
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [3262]: ^
+Erro de sintaxe na coluna [291]: ^
+Erro de sintaxe na coluna [219]: )
+Erro de sintaxe na coluna [2211]: ^
+Erro de sintaxe na coluna [13950]: ^
+Caractere(s) invalido(s) -> [|,|]
+Erro de sintaxe na coluna [4265]: *
+Erro de sintaxe na coluna [687]: (
+Caractere(s) invalido(s) -> [,,@]
+Erro de sintaxe na coluna [2660]: ^
+Erro de sintaxe na coluna [1981]: 66836.
+Caractere(s) invalido(s) -> [?,@]
+Erro de sintaxe na coluna [2657]: ^
+Erro de sintaxe na coluna [5331]: ^
+Erro de sintaxe na coluna [10987]: (
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [767]: ^
+Caractere(s) invalido(s) -> [!]
+Caractere(s) invalido(s) -> [&]
+Erro de sintaxe na coluna [2824]: %
+Erro de sintaxe na coluna [960]: ^
+Caractere(s) invalido(s) -> [?]
+Erro de sintaxe na coluna [2848]: ^
+Erro de sintaxe na coluna [3648]: *
+Erro de sintaxe na coluna [784]: ^
+EXPRESSAO CORRETA
+Erro de sintaxe na coluna [14987]: ^
+Erro de sintaxe na coluna [1655]: ^
+Erro de sintaxe na coluna [1369]: ^
+Caractere(s) invalido(s) -> [|,,]
+Erro de sintaxe na coluna [11932]: nntrsvezkvzvaujnti1
+Erro de sintaxe na coluna [4715]: ^
+Caractere(s) invalido(s) -> [#,|]
+Caractere(s) invalido(s) -> [$]
+Erro de sintaxe na coluna [3612]: ^
+Erro de sintaxe na coluna [1]: *
+Caractere(s) invalido(s) -> [,]
+Caractere(s) invalido(s) -> [$,@,,]
+Erro de sintaxe na coluna [504]: ^
+Caractere(s) invalido(s) -> [,]
+Erro de sintaxe na coluna [14199]: ^
+Erro de sintaxe na coluna [11772]: ^
+Erro de sintaxe na coluna [22534]: ^
+Caractere(s) invalido(s) -> [#]
+Erro de sintaxe na coluna [4973]: ^
+Caractere(s) invalido(s) -> [@,@,|]
+Erro de sintaxe na coluna [19959]: ^
+Erro de sintaxe na coluna [7898]: ^
+Erro de sintaxe na coluna [1765]: ^
+A expressao terminou de forma inesperada.
+Caractere(s) invalido(s) -> [|,?]
+Erro de sintaxe na coluna [9001]: ^
+Caractere(s) invalido(s) -> [?,&,=]
+Erro de sintaxe na coluna [6102]: ^
+Caractere(s) invalido(s) -> [=]
+Erro de sintaxe na coluna [6602]: ^
+Erro de sintaxe na coluna [13418]: ^
+Caractere(s) invalido(s) -> [&]
+Caractere(s) invalido(s) -> [=]
+Caractere(s) invalido(s) -> [|]
+Erro de sintaxe na coluna [8726]: ^
+Caractere(s) invalido(s) -> [@]
+Erro de sintaxe na coluna [1254]: ^
+Erro de sintaxe na coluna [4674]: ^
+Erro de sintaxe na coluna [6237]: ^
+Erro de sintaxe na coluna [3686]: ^
+Erro de sintaxe na coluna [2443]: ^
