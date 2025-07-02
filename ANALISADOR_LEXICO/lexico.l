@@ -2,103 +2,171 @@
 
 
 %{
-#include <bits/stdc++.h>
+    
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
 
 int line = 1, column = 1;
+int comment_line = 0, comment_column = 0;
+bool first_print = true;
 
-std::string treatString(std::string str) {
-    std::string treated_str = str.substr(1, str.length() - 2);
-    return treated_str;
+char* treatString(const char* str) {
+    size_t len = strlen(str);
+    char* buf = (char*)malloc(len - 1);
+    if (!buf) return NULL;
+    memcpy(buf, str + 1, len - 2);
+    buf[len - 2] = '\0';
+    return buf;
+}
+
+void printVerification() {
+        if (first_print) {
+            first_print = false;
+        } else {
+            printf("\n");
+        }
 }
 
 %}
 
 
+%x comment
+
+
 %%
 
-\n                  { line++; column = 1; }
-[\f\t\r ]+          { line++; column += yyleng; }
 
-"void"      { std::cout << "VOID" << std::endl; line++; column+=yyleng; }                   // VOID
-"int"       { std::cout << "INT" << std::endl; line++; column+=yyleng; }                    // INT
-"char"      { std::cout << "CHAR" << std::endl; line++; column+=yyleng; }                   // CHAR
-"return"    { std::cout << "RETURN" << std::endl; line++; column+=yyleng; }                 // RETURN
-"break"     { std::cout << "BREAK" << std::endl; line++; column+=yyleng; }                  // BREAK
-"switch"    { std::cout << "SWITCH" << std::endl; line++; column+=yyleng; }                 // SWITCH
-"case"      { std::cout << "CASE" << std::endl; line++; column+=yyleng; }                   // CASE
-"default"   { std::cout << "DEFAULT" << std::endl; line++; column+=yyleng; }                // DEFAULT
-"do"        { std::cout << "DO" << std::endl; line++; column+=yyleng; }                     // DO
-"while"     { std::cout << "WHILE" << std::endl; line++; column+=yyleng; }                  // WHILE
-"for"       { std::cout << "FOR" << std::endl; line++; column+=yyleng; }                    // FOR
-"if"        { std::cout << "IF" << std::endl; line++; column+=yyleng; }                     // IF
-"else"      { std::cout << "ELSE" << std::endl; line++; column+=yyleng; }                   // ELSE
-"typedef"   { std::cout << "TYPEDEF" << std::endl; line++; column+=yyleng; }                // TYPEDEF
-"struct"    { std::cout << "STRUCT" << std::endl; line++; column+=yyleng; }                 // STRUCT
-"+"         { std::cout << "PLUS" << std::endl; line++; column+=yyleng; }                   // PLUS
-"-"         { std::cout << "MINUS" << std::endl; line++; column+=yyleng; }                  // MINUS
-"*"         { std::cout << "MULTIPLY" << std::endl; line++; column+=yyleng; }               // MULTIPLY
-"/"         { std::cout << "DIV" << std::endl; line++; column+=yyleng; }                    // DIV
-"%"         { std::cout << "REMAINDER" << std::endl; line++; column+=yyleng; }              // REMAINDER
-"++"        { std::cout << "INC" << std::endl; line++; column+=yyleng; }                    // INC
-"--"        { std::cout << "DEC" << std::endl; line++; column+=yyleng; }                    // DEC
-"&"         { std::cout << "BITWISE_AND" << std::endl; line++; column+=yyleng; }            // BITWISE_AND
-"|"         { std::cout << "BITWISE_OR" << std::endl; line++; column+=yyleng; }             // BITWISE_OR
-"~"         { std::cout << "BITWISE_NOT" << std::endl; line++; column+=yyleng; }            // BITWISE_NOT
-"^"         { std::cout << "BITWISE_XOR" << std::endl; line++; column+=yyleng; }            // BITWISE_XOR
-"!"         { std::cout << "NOT" << std::endl; line++; column+=yyleng; }                    // NOT
-"&&"        { std::cout << "LOGICAL_AND" << std::endl; line++; column+=yyleng; }            // LOGICAL_AND
-"||"        { std::cout << "LOGICAL_OR" << std::endl; line++; column+=yyleng; }             // LOGICAL_OR
-"=="        { std::cout << "EQUAL" << std::endl; line++; column+=yyleng; }                  // EQUAL
-"!="        { std::cout << "NOT_EQUAL" << std::endl; line++; column+=yyleng; }              // NOT_EQUAL
-"<"         { std::cout << "LESS_THAN" << std::endl; line++; column+=yyleng; }              // LESS_THAN
-">"         { std::cout << "GREATER_THAN" << std::endl; line++; column+=yyleng; }           // GREATER_THAN
-"<="        { std::cout << "LESS_EQUAL" << std::endl; line++; column+=yyleng; }             // LESS_EQUAL
-">="        { std::cout << "GREATER_EQUAL" << std::endl; line++; column+=yyleng; }          // GREATER_EQUAL
-">>"        { std::cout << "R_SHIFT" << std::endl; line++; column+=yyleng; }                // R_SHIFT
-"<<"        { std::cout << "L_SHIFT" << std::endl; line++; column+=yyleng; }                // L_SHIFT
-"="         { std::cout << "ASSIGN" << std::endl; line++; column+=yyleng; }                 // ASSIGN
-"+="        { std::cout << "ADD_ASSIGN" << std::endl; line++; column+=yyleng; }             // ADD_ASSIGN
-"-="        { std::cout << "MINUS_ASSIGN" << std::endl; line++; column+=yyleng; }           // MINUS_ASSIGN
-";"         { std::cout << "SEMICOLON" << std::endl; line++; column+=yyleng; }              // SEMICOLON
-","         { std::cout << "COMMA" << std::endl; line++; column+=yyleng; }                  // COMMA
-":"         { std::cout << "COLON" << std::endl; line++; column+=yyleng; }                  // COLON
-"("         { std::cout << "L_PARAM" << std::endl; line++; column+=yyleng; }                // L_PARAM
-")"         { std::cout << "R_PARAM" << std::endl; line++; column+=yyleng; }                // R_PARAM
-"{"         { std::cout << "L_CURLY_BRACKET" << std::endl; line++; column+=yyleng; }        // L_CURLY_BRACKET
-"}"         { std::cout << "R_CURLY_BRACKET" << std::endl; line++; column+=yyleng; }        // R_CURLY_BRACKET
-"["         { std::cout << "L_SQUARE_BRACKET" << std::endl; line++; column+=yyleng; }       // L_SQUARE_BRACKET
-"]"         { std::cout << "R_SQUARE_BRACKET" << std::endl; line++; column+=yyleng; }       // R_SQUARE_BRACKET
-"?"         { std::cout << "TERNARY_CONDITIONAL" << std::endl; line++; column+=yyleng; }    // TERNARY_CONDITIONAL
-"#"         { std::cout << "NUMBER_SIGN" << std::endl; line++; column+=yyleng; }            // NUMBER_SIGN
-"->"        { std::cout << "POINTER" << std::endl; line++; column+=yyleng; }                // POINTER
-"printf"    { std::cout << "PRINTF" << std::endl; line++; column+=yyleng; }                 // PRINTF
-"scanf"     { std::cout << "SCANF" << std::endl; line++; column+=yyleng; }                  // SCANF
-"define"    { std::cout << "DEFINE" << std::endl; line++; column+=yyleng; }                 // DEFINE
-"exit"      { std::cout << "EXIT" << std::endl; line++; column+=yyleng; }                   // EXIT
+\n          { line++; column = 1; }
 
-\\[abfnrtv\\'\"?0]  { std::cout << "CHARACTER(" << yytext << ")" << std::endl; line++; column += yyleng; }     // Caracter: CHARACTER
+[\f\t\r ]+  { column += yyleng; }
 
-\".+\"  { std::cout << "STRING(" << treatString(yytext) << ")" << std::endl; line++; column+=yyleng; }          // String: STRING
+"/*"                { 
+    BEGIN(comment); 
+    comment_line = line; 
+    comment_column = column; 
+    column += yyleng; 
+}
 
-\'.+\'  { std::cout << "CHARACTER(" << treatString(yytext) << ")" << std::endl; line++; column+=yyleng; }       // Caracter: CHARACTER
+<comment><<EOF>>    { 
+    BEGIN(INITIAL);
+    printVerification();
+    printf("error:lexical:%d:%d: unterminated comment", comment_line, comment_column); 
+}
 
-("_"|[a-zA-Z]+)[a-zA-Z0-9]* {                                                                                   // Identificadores: IDENTIFIER 
+<comment>\n         {column = 1; line++;}
+
+<comment>"/*/"      { 
+    BEGIN(INITIAL); 
+    column += yyleng; 
+}
+
+<comment>"*/"       { 
+    BEGIN(INITIAL);
+    column += yyleng; 
+}
+
+<comment>"/*"       {
+    printVerification();
+    printf("warning:%d:%d: '/*' within block comment", line, column);
+    column += yyleng; 
+}
+
+<comment>.          {column += yyleng;}
+
+"void"      { printVerification(); printf("VOID"); column+=yyleng; }
+"int"       { printVerification(); printf("INT"); column+=yyleng; }
+"char"      { printVerification(); printf("CHAR"); column+=yyleng; }
+"return"    { printVerification(); printf("RETURN"); column+=yyleng; }
+"break"     { printVerification(); printf("BREAK"); column+=yyleng; }
+"switch"    { printVerification(); printf("SWITCH"); column+=yyleng; }
+"case"      { printVerification(); printf("CASE"); column+=yyleng; }
+"default"   { printVerification(); printf("DEFAULT"); column+=yyleng; }
+"do"        { printVerification(); printf("DO"); column+=yyleng; }
+"while"     { printVerification(); printf("WHILE"); column+=yyleng; }
+"for"       { printVerification(); printf("FOR"); column+=yyleng; }
+"if"        { printVerification(); printf("IF"); column+=yyleng; }
+"else"      { printVerification(); printf("ELSE"); column+=yyleng; }
+"typedef"   { printVerification(); printf("TYPEDEF"); column+=yyleng; }
+"struct"    { printVerification(); printf("STRUCT"); column+=yyleng; }
+"+"         { printVerification(); printf("PLUS"); column+=yyleng; }
+"-"         { printVerification(); printf("MINUS"); column+=yyleng; }
+"*"         { printVerification(); printf("MULTIPLY"); column+=yyleng; }
+"/"         { printVerification(); printf("DIV"); column+=yyleng; }
+"%"         { printVerification(); printf("REMAINDER"); column+=yyleng; }
+"++"        { printVerification(); printf("INC"); column+=yyleng; }
+"--"        { printVerification(); printf("DEC"); column+=yyleng; }
+"&"         { printVerification(); printf("BITWISE_AND"); column+=yyleng; }
+"|"         { printVerification(); printf("BITWISE_OR"); column+=yyleng; }
+"~"         { printVerification(); printf("BITWISE_NOT"); column+=yyleng; }
+"^"         { printVerification(); printf("BITWISE_XOR"); column+=yyleng; }
+"!"         { printVerification(); printf("NOT"); column+=yyleng; }
+"&&"        { printVerification(); printf("LOGICAL_AND"); column+=yyleng; }
+"||"        { printVerification(); printf("LOGICAL_OR"); column+=yyleng; }
+"=="        { printVerification(); printf("EQUAL"); column+=yyleng; }
+"!="        { printVerification(); printf("NOT_EQUAL"); column+=yyleng; }
+"<"         { printVerification(); printf("LESS_THAN"); column+=yyleng; }
+">"         { printVerification(); printf("GREATER_THAN"); column+=yyleng; }
+"<="        { printVerification(); printf("LESS_EQUAL"); column+=yyleng; }
+">="        { printVerification(); printf("GREATER_EQUAL"); column+=yyleng; }
+">>"        { printVerification(); printf("R_SHIFT"); column+=yyleng; }
+"<<"        { printVerification(); printf("L_SHIFT"); column+=yyleng; }
+"="         { printVerification(); printf("ASSIGN"); column+=yyleng; }
+"+="        { printVerification(); printf("ADD_ASSIGN"); column+=yyleng; }
+"-="        { printVerification(); printf("MINUS_ASSIGN"); column+=yyleng; }
+";"         { printVerification(); printf("SEMICOLON"); column+=yyleng; }
+","         { printVerification(); printf("COMMA"); column+=yyleng; }
+":"         { printVerification(); printf("COLON"); column+=yyleng; }
+"("         { printVerification(); printf("L_PAREN"); column+=yyleng; }
+")"         { printVerification(); printf("R_PAREN"); column+=yyleng; }
+"{"         { printVerification(); printf("L_CURLY_BRACKET"); column+=yyleng; }
+"}"         { printVerification(); printf("R_CURLY_BRACKET"); column+=yyleng; }
+"["         { printVerification(); printf("L_SQUARE_BRACKET"); column+=yyleng; }
+"]"         { printVerification(); printf("R_SQUARE_BRACKET"); column+=yyleng; }
+"?"         { printVerification(); printf("TERNARY_CONDITIONAL"); column+=yyleng; }
+"#"         { printVerification(); printf("NUMBER_SIGN"); column+=yyleng; }
+"->"        { printVerification(); printf("POINTER"); column+=yyleng; }
+"printf"    { printVerification(); printf("PRINTF"); column+=yyleng; }
+"scanf"     { printVerification(); printf("SCANF"); column+=yyleng; }
+"define"    { printVerification(); printf("DEFINE"); column+=yyleng; }
+"exit"      { printVerification(); printf("EXIT"); column+=yyleng; }
+
+\\[abfnrtv\\'\"?0]  { printVerification(); printf("CHARACTER(%s)", yytext); column += yyleng; }
+
+\"(\\.|[^"\\])*\"   {
+    char* s = treatString(yytext);
+    printVerification();
+    printf("STRING(%s)", s);
+    column+=yyleng;
+    free(s);
+}
+
+"'"(\\.|[^\\']){1}"'"  {
+    char* s = treatString(yytext);
+    printVerification();
+    printf("CHARACTER(%s)", s);
+    column+=yyleng;
+    free(s);
+}
+
+[a-zA-Z_]+[a-zA-Z0-9_]* {
     if(yyleng > 255) {
-        std::out << "error:lexical:" << line << ":" << column << ": " << "identifier too long" << std::endl; 
-        line++; 
+        printVerification();
+        printf("error:lexical:%d:%d: identifier too long", line, column);
         column+=yyleng;
     } else {
-        std::cout << "IDENTIFIER(" << yytext << ")" << std::endl; 
-        line++; 
+        printVerification();
+        printf("IDENTIFIER(%s)", yytext);
         column+=yyleng;
     }
-}  
+}
 
-0[xX][0-9a-fA-F]+   { std::cout << "NUM_HEXA(" << yytext << ")" << std::endl; line++; column+=yyleng; }     // Hexadecimal: NUM_HEXA
-0[1-7][0-7]         { std::cout << "NUM_OCTAL(" << yytext << ")" << std::endl; line++; column+=yyleng; }    // Octais: NUM_OCTAL
-[0-9]+              { std::cout << "NUM_INTEGER(" << yytext << ")" << std::endl; line++; column+=yyleng; }  // Inteiros: NUM_INTEGER
+0[xX][0-9a-fA-F]+   { printVerification(); printf("NUM_HEXA(%s)", yytext); column+=yyleng; }
+0[1-7][0-7]*        { printVerification(); printf("NUM_OCTAL(%s)", yytext); column+=yyleng; }
+[0-9]+              { printVerification(); printf("NUM_INTEGER(%s)", yytext); column+=yyleng; }
 
-. { std::cout << "error:lexical:" << line << ":" << column << ": " << yytext << std::endl; line++; column+=yyleng; }   // error:lexical
+. { printVerification(); printf("error:lexical:%d:%d: %s", line, column, yytext); column+=yyleng; }
 
 
 %%
@@ -106,6 +174,5 @@ std::string treatString(std::string str) {
 
 int main(int argc, char** argv) {
     yylex();
-
     return 0;
 }
