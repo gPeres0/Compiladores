@@ -61,8 +61,7 @@ void ast::sort_functions(std::vector<ast::AST_Function*> &funcoes) {
 
 void verifyEndl(bool isEnd) {
     if (isEnd) {
-        std::cout ;
-        verifyEndl(true);
+        std::cout << std::endl;
     }
 }
 
