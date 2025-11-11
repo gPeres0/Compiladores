@@ -8,29 +8,30 @@ constexpr int NODE_NOT_FOUND = -1;
 
 // Estrutura que representa um nó (registrador) no grafo de interferência.
 struct RegisterNode {
-    int id;                // Número do registrador (virtual ou físico)
-    set<int> neighbors;    // Conjunto de IDs dos vizinhos (interferências)
-    bool is_potential_spill = false; // Marcador para saída (apenas para a saída)
+    int id;                             // Número do registrador
+    set<int> neighbors;                 // Conjunto de IDs dos vizinhos (interferências)
+    bool is_potential_spill = false;    // Marcador para saída
 
-    // Construtor
-    RegisterNode(int i) : id(i) {}
+    RegisterNode(int i) : id(i) {}      // Construtor
 };
 
 
 
-// ==================== Funções internas ==================== //
+// =============== Variáveis globais auxiliares ============== //
 
 int graph_number = 0;
-int initial_k = 0; // K original do arquivo
-map<int, RegisterNode> initial_graph; // Grafo lido (base para cada tentativa)
+int initial_k = 0;                      // K original do arquivo
+map<int, RegisterNode> initial_graph;   // Grafo lido (base para cada tentativa)
     
-// Resultados para o resumo final
-map<int, string> results_summary; 
+map<int, string> results_summary;       // Resultados para o resumo final 
 
-// Estruturas usadas durante o processo de coloração (por tentativa de K)
-list<pair<int, bool>> simplify_stack; // pair<node_id, is_spill>
-map<int, int> allocated_colors; // Cores finais atribuídas (registrador -> cor)
-map<int, RegisterNode> current_graph; // Grafo que está sendo simplificado
+list<pair<int, bool>> simplify_stack;   // pair<node_id, is_spill>
+map<int, int> allocated_colors;         // Cores finais atribuídas (registrador -> cor)
+map<int, RegisterNode> current_graph;   // Grafo que está sendo simplificado
+
+
+
+// ==================== Funções internas ==================== //
 
 // Retorna o grau de um nó no grafo atual.
 int get_degree(int node_id) {
@@ -49,7 +50,6 @@ int find_simplifiable_node(int current_k) {
     int min_degree = numeric_limits<int>::max();
 
     for (auto const& [id, node] : current_graph) {
-        // Ignora registradores físicos/cores (id < initial_k)
         if (id < initial_k) continue;
         int deg = get_degree(id);
 
@@ -79,7 +79,6 @@ int find_spill_candidate() {
     int max_degree = -1;
 
     for (auto const& [id, node] : current_graph) {
-        // Ignora registradores físicos/cores (id < initial_k)
         if (id < initial_k) continue;
 
         int deg = get_degree(id);
@@ -100,22 +99,20 @@ int find_spill_candidate() {
 
 // Remove um nó do grafo, atualiza vizinhos e empilha.
 void remove_node(int node_id, bool is_spill) {
-    // 1. Imprimir a linha 'Push: node_id [*]'
     cout << "Push: " << node_id;
     if (is_spill) {
-        cout << " *"; // Indicação de potencial spill
+        cout << " *";
     }
     cout << endl;
 
-    // 2. Colocar o node_id na pilha (simplify_stack)
+    // Coloca o node_id na pilha (simplify_stack)
     simplify_stack.push_front({node_id, is_spill});
 
-    // 3. Remover arestas e o nó do grafo (Build)
+    // Remove arestas e o nó do grafo (Build)
     if (current_graph.count(node_id)) {
         // Para cada vizinho, remove a aresta de interferência
         for (int neighbor_id : current_graph.at(node_id).neighbors) {
             if (current_graph.count(neighbor_id)) {
-                // Não importa se o vizinho é físico ou virtual, a aresta é removida dele.
                 current_graph.at(neighbor_id).neighbors.erase(node_id);
             }
         }
@@ -124,9 +121,8 @@ void remove_node(int node_id, bool is_spill) {
     }
 }
 
-// Fase Simplify e Potencial Spill (Iterativa)
+// Fase Simplify e Potencial Spill
 void simplify_and_spill(int current_k) {
-    // CORREÇÃO: O loop agora checa explicitamente se há nós virtuais restantes.
     while (true) {
         // Checa se há algum nó virtual restante no grafo.
         bool has_virtual_nodes = false;
@@ -138,20 +134,17 @@ void simplify_and_spill(int current_k) {
         }
         if (!has_virtual_nodes) break; // Todos os virtuais foram empilhados.
 
-        // 1. Tenta simplificar
         int node_to_remove = find_simplifiable_node(current_k);
 
         if (node_to_remove != NODE_NOT_FOUND) {
             // Nó simplificável encontrado (Grau < K)
             remove_node(node_to_remove, false);
         } else {
-            // 2. Nenhum nó simplificável (Potencial Spill)
+            // Nenhum nó simplificável (Potencial Spill)
             node_to_remove = find_spill_candidate();
             if (node_to_remove != NODE_NOT_FOUND) {
                 remove_node(node_to_remove, true);
             } else {
-                // Devemos sempre encontrar um nó se has_virtual_nodes for true, 
-                // mas este break é uma salvaguarda final.
                 break; 
             }
         }
@@ -165,15 +158,12 @@ void simplify_and_spill(int current_k) {
 bool select_and_assign(int current_k) {
     bool spill_occurred = false;
 
-    // Reconstruir o grafo e colorir na ordem inversa da pilha (LIFO)
+    // Reconstroi o grafo e colorir na ordem inversa da pilha (LIFO)
     while (!simplify_stack.empty()) {
         int node_id = simplify_stack.front().first;
         simplify_stack.pop_front();
 
-         // O nó é reintroduzido para checagem de vizinhos.
-        // Para otimização, usamos o initial_graph que é completo.
-
-        // 1. Encontrar a menor cor disponível (0 a current_k - 1)
+        // Encontra a menor cor disponível (0 a current_k - 1)
         set<int> unavailable_colors;
             
         // Verifica a cor dos vizinhos no grafo inicial.
@@ -181,7 +171,6 @@ bool select_and_assign(int current_k) {
             // Se o vizinho é um registrador físico (cor), ele é indisponível
             if (neighbor_id < initial_k) {
                 if (neighbor_id < current_k) {
-                     // Apenas as cores no range atual (0 a current_k-1) importam
                     unavailable_colors.insert(neighbor_id);
                 }
             }
@@ -192,7 +181,7 @@ bool select_and_assign(int current_k) {
         }
         
         int chosen_color = -1;
-        // Procurar a menor cor (de 0 até current_k - 1)
+        // Procura a menor cor (de 0 até current_k - 1)
         for (int color = 0; color < current_k; ++color) {
             if (unavailable_colors.find(color) == unavailable_colors.end()) {
                 chosen_color = color;
@@ -200,14 +189,14 @@ bool select_and_assign(int current_k) {
             }
         }
 
-        // 2. Atribuir cor ou indicar spill
+        // Atribue cor ou indicar spill
         cout << "Pop: " << node_id;
         if (chosen_color != -1) {
             // Atribuir cor
             allocated_colors[node_id] = chosen_color;
             cout << " -> " << chosen_color << endl;
         } else {
-            // Spill: Nenhuma cor disponível
+            // Spill
             cout << " -> NO COLOR AVAILABLE" << endl;
             spill_occurred = true;
             break; // Termina a coloração para este K
@@ -225,29 +214,27 @@ bool read_graph(istream& input) {
     string line;
     bool reading_interference = false;
         
-    // Limpar estruturas para o novo grafo
     initial_graph.clear();
     results_summary.clear();
     graph_number = 0;
     initial_k = 0;
 
-    // CORREÇÃO: O loop agora roda até o EOF, lendo todas as linhas
     while (getline(input, line)) {
         stringstream ss(line);
         string token;
 
-        if (line.rfind("Grafo", 0) == 0) { // Início do grafo
-            ss >> token; // Grafo
+        if (line.rfind("Grafo", 0) == 0) {
+            ss >> token;
             ss >> graph_number;
             graph_number = abs(graph_number);
-            reading_interference = false; // Reset para o K
+            reading_interference = false;
             continue;
         }
             
         if (graph_number == 0) continue; // Ainda não encontrou o header
 
-        if (line.rfind("K=", 0) == 0) { // Número de cores (K)
-            ss.ignore(2); // Ignora "K="
+        if (line.rfind("K=", 0) == 0) {
+            ss.ignore(2);
             ss >> initial_k;
             reading_interference = true;
             continue;
@@ -255,14 +242,13 @@ bool read_graph(istream& input) {
 
         if (!reading_interference) continue; // Linhas entre K e a primeira interferência
 
-        // Leitura das interferências: NNN --> V1 V2 V3...
         int node_id;
         ss >> node_id;
             
         if (ss.fail()) continue; // Não conseguiu ler o ID (linha vazia, etc.)
 
         string separator;
-        ss >> separator; // Tenta ler '-->' ou '->'
+        ss >> separator;
 
         if (separator == "-->" || separator == "->") {
             // Garante que o nó base existe (virtual ou físico)
@@ -295,23 +281,23 @@ void run_allocation() {
     cout << "Graph " << graph_number << " -> Physical Registers: " << initial_k << endl;
     cout << "----------------------------------------\n";
 
-     // Tentar colorir de K até 2 cores
+    // Tentar colorir de K até 2 cores
     for (int current_k = initial_k; current_k >= 2; --current_k) {
             
-        // 1. Inicialização da Tentativa
+        // Inicialização da Tentativa
         cout << "----------------------------------------\n";
         cout << "K = " << current_k << "\n\n";
         current_graph = initial_graph;
         simplify_stack.clear();
         allocated_colors.clear();
 
-        // 2. Fase Simplify/Spill
+        // Fase Simplify/Spill
         simplify_and_spill(current_k);
 
-        // 3. Fase Select/Assign
+        // Fase Select/Assign
         bool success = select_and_assign(current_k);
 
-        // 4. Registrar Resultado
+        // Registrar Resultado
         if (success) {
             results_summary[current_k] = "Successful Allocation";
         } else {
@@ -344,7 +330,7 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-        if (read_graph(cin)) {
+    if (read_graph(cin)) {
         run_allocation();
         print_summary();
     }
