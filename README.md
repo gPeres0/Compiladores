@@ -37,15 +37,21 @@ Repositório destinado às atividades e trabalhos práticos da matéria de Compi
 
 ## Compiladores I
 #### Estrutura de diretórios: 
-- ANALISADOR_LEXICO:: Trabalho 1 da disciplina. Aqui, foi criado um analisador léxico para C, utilizando a ferramenta Flex.  
-- ANALISADOR_SINTATICO:: Trabalho 2 da disciplina. Aqui, foi desenvolvido um analisador sintático, englobando os conceitos do trabalho anterior com novas ferramentas, como o Bison.  
-- COMPILADOR_PORTUGOL::
-- EX_PRATICOS:: Exercícios práticos desenvolvidos durante o semestre. Os exercícios são derivados das listas semanais passadas pelo professor.
-- EX_TEORICOS:: PDFs contendo os exercícios teóricos desenvolvidos durante o semestre. Os exercícios são derivados das listas semanais passadas pelo professor.
+- ANALISADOR_LEXICO :: Trabalho 1 da disciplina. Aqui, foi criado um analisador léxico para C, utilizando a ferramenta Flex.  
+- ANALISADOR_SINTATICO :: Trabalho 2 da disciplina. Aqui, foi desenvolvido um analisador sintático, englobando os conceitos do trabalho anterior com novas ferramentas, como o Bison.  
+- COMPILADOR_PORTUGOL ::
+- EX_PRATICOS :: Exercícios práticos desenvolvidos durante o semestre. Os exercícios são derivados das listas semanais passadas pelo professor.
+- EX_TEORICOS :: PDFs contendo os exercícios teóricos desenvolvidos durante o semestre. Os exercícios são derivados das listas semanais passadas pelo professor.
 
 ## Compiladores II
 #### Estrutura de diretórios:
-- 
+- DCMAT :: Compilador de expressões matemáticas e visualizador gráfico de funções.
+- EX_PRATICOS :: Exercícios práticos desenvolvidos durante o semestre. Os exercícios são derivados das listas semanais passadas pelo professor.
+- EX_TEORICOS :: PDFs contendo os exercícios teóricos desenvolvidos durante o semestre. Os exercícios são derivados das listas semanais passadas pelo professor.
+- GERADOR :: Gerador de código MIPS a partir de código C. Basicamente um tradutor C -> MIPS.
+- REGALLOC :: Algoritmo de coloração de grafos para alocação de registradores.
+- SEMINARIO :: Material utilizado para o seminário semestral da disciplina. O famoso battle royale de Compiladores.
+
 ---
 
     ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢟⣛⣿⣽⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢉⡟⣹⢏⢙⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣭⣛⣛⣛⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
